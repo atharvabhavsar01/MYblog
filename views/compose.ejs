@@ -1,0 +1,33 @@
+<%- include("./partials/header.ejs") -%> 
+
+<h1>Compose</h1>
+ 
+<!-- <-- creating a form to take input for blog  --> 
+<form action="/compose" method="post">
+
+
+    <div class="input mb-3">
+        <h class="input-text" placeholder="title" >Title</h>
+        <input type="text" class="form-control"   name="post_title" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+
+       
+     <!-- input title -->
+      
+       
+      
+      <div class="input m-3 gap-3">
+        <h class="input-text " placeholder="text-body" >Post</h>
+        <textarea class="form-control"  name="post_text" rows="10" column="30" aria-label="With textarea"></textarea>
+      </div>
+      <!-- <br>   -->
+      <!-- input text area -->
+
+    <!-- publish button -->
+    <div class="col-12 m-4 gap-3">
+        <button class="btn btn-primary publish-btn" type="submit">Publish</button>
+      </div>
+
+</form>
+
+<%- include("./partials/footer.ejs") -%> 
